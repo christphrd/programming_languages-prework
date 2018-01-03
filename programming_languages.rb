@@ -3,9 +3,9 @@ require "pry"
 def reformat_languages(languages)
   new_hash = {}
   languages.each do |style,lang_list|
-    style_array = []
     lang_list.each do |lang,type_data|
       new_hash[lang] = {}
+      style_array = []
       type_data.each do |k,v|
         new_hash[lang][k] = v
         style_array << style

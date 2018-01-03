@@ -9,6 +9,9 @@ def reformat_languages(languages)
         new_hash[lang][k] = v
         style_array = new_hash[lang][:style]
         binding.pry
+        if style_array == nil
+          style_array = []
+        end
         style_array << style
         new_hash[lang][:style] = style_array
       end

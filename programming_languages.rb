@@ -4,7 +4,10 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |style,lang_list|
     lang_list.each do |lang,type_data|
-      new_hash[lang] = {}
+      lang_facts = new_hash[lang]
+      if new_hash[lang] == nil
+        new_hash[lang] = {}
+      end
       type_data.each do |k,v|
         new_hash[lang][k] = v
         binding.pry

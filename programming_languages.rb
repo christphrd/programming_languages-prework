@@ -19,6 +19,7 @@ def reformat_languages(languages)
   languages.each do |style,lang_list|
     lang_list.each do |lang,type_data|
       new_hash[lang][:style] << style
+      new_hash[lang][:style].uniq
     end
   end
   new_hash

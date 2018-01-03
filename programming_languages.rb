@@ -13,9 +13,8 @@ def reformat_languages(languages)
   style_array = []
   languages.each do |style,lang_list|
     lang_list.each do |lang,type_data|
+      new_hash[lang][:style] = style_array
     end
   end
-  style_array << style
-  new_hash[lang][:style] = style_array
   new_hash
 end

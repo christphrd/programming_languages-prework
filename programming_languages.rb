@@ -11,7 +11,6 @@ def reformat_languages(languages)
         if style_array == nil
           style_array = []
         end
-        binding.pry
         style_array << style
         new_hash[lang][:style] = style_array
       end

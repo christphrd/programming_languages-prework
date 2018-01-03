@@ -8,6 +8,7 @@ def reformat_languages(languages)
       type_data.each do |k,v|
         new_hash[lang][k] = v
         style_array = new_hash[lang][:style]
+        binding.pry
         if style_array == nil
           style_array = []
         end

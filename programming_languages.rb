@@ -5,7 +5,6 @@ def reformat_languages(languages)
   languages.each do |style,lang_list|
     lang_list.each do |lang,type_data|
       new_hash[lang] = {}
-      style_array = []
       type_data.each do |k,v|
         new_hash[lang][k] = v
         style_array << style
